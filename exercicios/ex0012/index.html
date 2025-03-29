@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor<p>
+    <video width="560" height="315" poster="imagens/foto.jpg" controls><!--O parãmetro poster serve par colocar um foto de capa em cada vídeo-->
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/video1.mv4" type="video/mp4"><!--Esse é formato mais indicado-->
+        <source src="midia/video1.webm" type="video/webm">
+        <source src="midia/video1.ogv" type="video/ogg">
+
+        <!--Cada um dos formatos referenciados anteriormente são extensões de vídeos, é muito importante usar cada uma delas, pois cada navegador é compatível com algum desses tipos!-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo!</p>
+    </video>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GcX266qIy0A?si=he2HOHm_ir0rmjY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

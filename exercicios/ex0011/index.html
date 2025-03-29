@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias em html</h1>
+    <p>Tente abrir o site em vários dispositivos ou aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--Para deixar imagens responsivas, ou seja, fazer com que elas se adaptem a vários tamanhos de tela, usamos obrigatoriamente, a tag PICTURE, com o parâmetro souce - media - type-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="" title="foto g">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir um áudio em HTML5!</p>
+    <audio preload="none" autoplay controls>
+        <!--Para adicionar áudios às páginas não podemos esquecer do parâmetros AUTOPLAY AND CONTROLS-->
+        <source src="midia/ele-quer-ser-eu.mp3" type="audio/mpeg">
+        <source src="midia/ele-quer-ser-eu.ogg" type="audio/ogg">
+        <source src="midia/ele-quer-ser-eu.wav" type="audio/wav"><!--Esse tipo de atributo usa arquivos muito pesados, então evite usar o wav-->
+    </audio>
+</body>
+</html>
